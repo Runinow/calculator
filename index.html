@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rate Calculator</h1>
+    <table>
+        <tr>
+            <td>Enter your average miles per gallon:</td>
+            <td colspan="2"><input type="number" id="mpg" value="6.50"></td>
+            <td>Enter current gas price:</td>
+            <td colspan="2"><input type="number" id="gasPrice" value="5.00"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Load #1</th>
+            <th>Load #2</th>
+            <th></th>
+            <th>Load #1</th>
+            <th>Load #2</th>
+        </tr>
+        <tr>
+            <td colspan="3">1st Trip</td>
+            <td colspan="3">Backhaul Load</td>
+        </tr>
+        <tr>
+            <td>Trip Miles</td>
+            <td><input type="number" id="tripMiles1" value="1000"></td>
+            <td><input type="number" id="tripMiles2" value="100"></td>
+            <td>Trip Miles</td>
+            <td><input type="number" id="backhaulMiles1" value="100"></td>
+            <td><input type="number" id="backhaulMiles2" value="1000"></td>
+        </tr>
+        <tr>
+            <td>Deadhead I Pickup</td>
+            <td><input type="number" id="deadhead11" value="1"></td>
+            <td><input type="number" id="deadhead12" value="2"></td>
+            <td>Deadhead I Pickup</td>
+            <td><input type="number" id="deadhead21" value="10"></td>
+            <td><input type="number" id="deadhead22" value="20"></td>
+        </tr>
+        <tr>
+            <td>Deadhead I Drop of</td>
+            <td><input type="number" id="deadhead21" value="2"></td>
+            <td><input type="number" id="deadhead22" value="3"></td>
+            <td>Deadhead I Drop of</td>
+            <td><input type="number" id="deadhead31" value="30"></td>
+            <td><input type="number" id="deadhead32" value="100"></td>
+        </tr>
+        <tr>
+            <td>Total Miles</td>
+            <td id="totalMiles1"></td>
+            <td id="totalMiles2"></td>
+            <td>Total Miles</td>
+            <td id="totalMiles3"></td>
+            <td id="totalMiles4"></td>
+        </tr>
+        <tr>
+            <td>Rate</td>
+            <td id="rate1"></td>
+            <td id="rate2"></td>
+            <td>Rate</td>
+            <td id="rate3"></td>
+            <td id="rate4"></td>
+        </tr>
+        <tr>
+            <td>Weight</td>
+            <td id="weight1"></td>
+            <td id="weight2"></td>
+            <td>Weight</td>
+            <td id="weight3"></td>
+            <td id="weight4"></td>
+        </tr>
+        <tr>
+            <td>Fuel Reduction</td>
+            <td id="fuelReduction1"></td>
+            <td id="fuelReduction2"></td>
+            <td>Fuel Reduction</td>
+            <td id="fuelReduction3"></td>
+            <td id="fuelReduction4"></td>
+        </tr>
+        <tr>
+            <td>Fuel Cost</td>
+            <td id="fuelCost1"></td>
+            <td id="fuelCost2"></td>
+            <td>Fuel Cost</td>
+            <td id="fuelCost3"></td>
+            <td id="fuelCost4"></td>
+        </tr>
+        <tr>
+            <td>Days</td>
+            <td id="days1"></td>
+            <td id="days2"></td>
+            <td>Days</td>
+            <td id="days3"></td>
+            <td id="days4"></td>
+        </tr>
+        <tr>
+            <td>Rate Per Mile</td>
+            <td id="ratePerMile1"></td>
+            <td id="ratePerMile2"></td>
+            <td>Rate Per Mile</td>
+            <td id="ratePerMile3"></td>
+            <td id="ratePerMile4"></td>
+        </tr>
+        <tr>
+            <td>True RPM</td>
+            <td id="trueRpm1"></td>
+            <td id="trueRpm2"></td>
+            <td>True RPM</td>
+            <td id="trueRpm3"></td>
+            <td id="trueRpm4"></td>
+        </tr>
+        <tr>
+            <td>True Day Rate</td>
+            <td id="trueDayRate1"></td>
+            <td id="trueDayRate2"></td>
+            <td>True Day Rate</td>
+            <td id="trueDayRate3"></td>
+            <td id="trueDayRate4"></td>
+        </tr>
+        <tr>
+            <td>True Rate</td>
+            <td id="trueRate1"></td>
+            <td id="trueRate2"></td>
+            <td>True Rate</td>
+            <td id="trueRate3"></td>
+            <td id="trueRate4"></td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Rate Per Mile</td>
+            <td colspan="3">Total Rate Per Day</td>
+            <td colspan="3">Total Rate</td>
+        </tr>
+        <tr>
+            <td colspan="3" id="totalRatePerMile"></td>
+            <td colspan="3" id="totalRatePerDay"></td>
+            <td colspan="3" id="totalRate"></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

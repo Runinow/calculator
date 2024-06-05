@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+#mpg, #gasPrice {
+    background-color: yellow;
+}
+
+.output {
+    background-color: lightgray;
+}
+
+.result {
+    background-color: lightgreen;
+}
